@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jaxon W Scott</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
   <style>
-    /* ----- Global Dark Theme ----- */
+    /* ----- Global Light Theme ----- */
     body {
       margin: 0;
       font-family: 'Work Sans', sans-serif;
-      background: #121212;
-      color: #e0e0e0;
+      background: #f9f9f9;
+      color: #222;
     }
     a {
       color: inherit;
       text-decoration: none;
     }
 
-    /* ----- Header with Seamless Dot Pattern + Slanted Edge ----- */
+    /* ----- Header with Soft Slant + Accent Line ----- */
     header {
       position: relative;
       padding: 40px 50px 80px;
-      background-color: #1a1a1a;
-      background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 20px 20px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       gap: 200px;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     header::before {
       content: '';
       position: absolute;
-      top: 96%;
+      top: 98%;
       left: 0;
       width: 100%;
-      height: 6px;
+      height: 4px;
       background: #ff6600;
-      transform-origin: top left;
-      transform: skewY(-1.2deg);
+      transform: skewY(-1deg);
       z-index: 0;
     }
 
@@ -55,12 +54,12 @@
       font-family: 'Playfair Display', serif;
       font-size: 56px;
       margin: 0;
-      color: #fff;
+      color: #111;
     }
     .subheadline {
       font-size: 18px;
       margin-top: 6px;
-      color: #bbb;
+      color: #666;
     }
 
     .contact {
@@ -74,9 +73,9 @@
       color: #ff6600;
     }
 
-    /* ----- Project Showcase Grid ----- */
+    /* ----- Project Grid Section ----- */
     .project-showcase {
-      padding: 40px 50px;
+      padding: 50px;
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -89,10 +88,10 @@
     }
 
     .project {
-      background-color: #1a1a1a;
-      border: 1px solid #2a2a2a;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       overflow: hidden;
       transition: transform 0.3s ease;
       text-align: center;
@@ -123,22 +122,22 @@
       border-bottom: 3px solid #ff6600;
     }
 
-    /* ----- See More Projects ----- */
+    /* ----- See More Projects Button ----- */
     .more-projects {
-      background-color: #1f1f1f;
-      border: 2px solid #333;
+      background-color: #fff;
+      border: 2px solid #e0e0e0;
       padding: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-decoration: none;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
 
     .more-projects:hover {
-      background-color: #2a2a2a;
+      background-color: #f0f0f0;
+      border-color: #ccc;
     }
 
     .more-text {
