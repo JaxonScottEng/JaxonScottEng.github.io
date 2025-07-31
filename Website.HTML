@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jaxon W Scott</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
   <style>
@@ -13,12 +13,13 @@
       background: #121212;
       color: #e0e0e0;
     }
+
     a {
       color: inherit;
       text-decoration: none;
     }
 
-    /* ----- Header with Seamless Dot Pattern + Slanted Edge ----- */
+    /* ----- Header with Dot Pattern + Slanted Stripe ----- */
     header {
       position: relative;
       padding: 40px 50px 80px;
@@ -39,7 +40,7 @@
       left: 0;
       width: 100%;
       height: 6px;
-      background: #ff6600;
+      background: #f58634;
       transform-origin: top left;
       transform: skewY(-1.2deg);
       z-index: 0;
@@ -51,12 +52,14 @@
       display: flex;
       flex-direction: column;
     }
+
     .name {
       font-family: 'Playfair Display', serif;
       font-size: 56px;
       margin: 0;
       color: #fff;
     }
+
     .subheadline {
       font-size: 18px;
       margin-top: 6px;
@@ -70,11 +73,12 @@
       font-size: 14px;
       line-height: 1.4;
     }
+
     .contact a:hover {
-      color: #ff6600;
+      color: #f58634;
     }
 
-    /* ----- Project Showcase Grid ----- */
+    /* ----- Project Section ----- */
     .project-showcase {
       padding: 40px 50px;
       display: flex;
@@ -89,24 +93,25 @@
     }
 
     .project {
-      background-color: #1a1a1a;
-      border: 1px solid #2a2a2a;
+      background-color: #1c1e1f;
+      border: 1px solid #2a2d2f;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
       padding: 20px;
     }
 
     .project:hover {
-      transform: scale(1.03);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
 
     .project .caption {
       font-weight: 600;
       font-size: 18px;
-      color: #ff6600;
+      color: #f58634;
       margin-bottom: 12px;
     }
 
@@ -116,35 +121,35 @@
       object-fit: cover;
       border-radius: 6px;
       border-bottom: 3px solid transparent;
-      transition: border-bottom 0.3s ease;
+      transition: border-bottom 0.3s ease, transform 0.3s ease;
     }
 
     .project:hover img {
-      border-bottom: 3px solid #ff6600;
+      transform: scale(1.01);
+      border-bottom: 3px solid #f58634;
     }
 
-    /* ----- See More Projects ----- */
+    /* ----- More Projects Card ----- */
     .more-projects {
-      background-color: #1f1f1f;
-      border: 2px solid #333;
+      background-color: #1c1e1f;
+      border: 2px solid #2a2d2f;
       padding: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-decoration: none;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
 
     .more-projects:hover {
-      background-color: #2a2a2a;
+      background-color: #2a2d2f;
     }
 
     .more-text {
       font-size: 20px;
       font-weight: 500;
-      color: #ff6600;
+      color: #f58634;
     }
 
     /* ----- Responsive ----- */
@@ -152,6 +157,7 @@
       .featured-grid {
         grid-template-columns: 1fr;
       }
+
       header {
         gap: 100px;
       }
