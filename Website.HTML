@@ -1,166 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jaxon W Scott</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
-  <style>
-    /* ----- Global Dark Theme ----- */
-    body {
-      margin: 0;
-      font-family: 'Work Sans', sans-serif;
-      background: #121212;
-      color: #e0e0e0;
-    }
-    a { color: inherit; text-decoration: none; }
+.project-showcase {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-    /* ----- Header with Seamless Dot Pattern + Slanted Edge ----- */
-    header {
-      position: relative;
-      padding: 40px 50px 80px;
-      background-color: #1a1a1a;
-      background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
-      background-size: 20px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 200px;
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-    }
-    /* Orange accent stripe above slanted edge, behind text */
-    header::before {
-      content: '';
-      position: absolute;
-      top: 96%;             /* lowered slightly */
-      left: 0;
-      width: 100%;
-      height: 6px;
-      background: #ff6600;
-      transform-origin: top left;
-      transform: skewY(-1.2deg);
-      z-index: 0;
-    }
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
 
-    /* Name + Sub‑headline */
-    .branding {
-      position: relative;
-      z-index: 1;           /* bring above stripe */
-      display: flex;
-      flex-direction: column;
-    }
-    .name {
-      font-family: 'Playfair Display', serif;
-      font-size: 56px;
-      margin: 0;
-      color: #fff;
-    }
-    .subheadline {
-      font-size: 18px;
-      margin-top: 6px;
-      color: #bbb;
-    }
+.project {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.project:hover {
+  transform: scale(1.04);
+}
+.project img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid transparent;
+}
+.project:hover img {
+  border-bottom: 3px solid #ff6600;
+}
+.caption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #e0e0e0;
+}
 
-    /* Contact Block */
-    .contact {
-      position: relative;
-      z-index: 1;           /* bring above stripe */
-      text-align: right;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-    .contact a:hover {
-      color: #ff6600;
-    }
+/* See More Projects Card */
+.more-projects {
+  background-color: #1f1f1f;
+  border: 2px solid #333;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.more-projects:hover {
+  background-color: #2a2a2a;
+}
+.more-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff6600;
+}
 
-    /* ----- Project Grid ----- */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      padding: 40px 50px;
-    }
-    .project {
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .project:hover {
-      transform: scale(1.04);
-    }
-    .project img {
-      width: 100%;
-      height: auto;
-      border-bottom: 3px solid transparent;
-    }
-    .project:hover img {
-      border-bottom: 3px solid #ff6600;
-    }
-    .caption {
-      margin-top: 10px;
-      font-weight: 500;
-      color: #e0e0e0;
-    }
-
-    /* ----- Responsive ----- */
-    @media (max-width: 1000px) {
-      .grid { grid-template-columns: repeat(2, 1fr); }
-      header { gap: 100px; }
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 30px 20px 60px;
-        gap: 0;
-      }
-      .contact { text-align: left; margin-top: 15px; }
-      .grid { grid-template-columns: 1fr; padding: 20px; }
-      .name {
-        font-size: 36px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="branding">
-      <a href="/" class="name">Jaxon W Scott</a>
-      <div class="subheadline">Mechanical Engineering Student</div>
-    </div>
-    <div class="contact">
-      <a href="mailto:Jaxonwscott@gmail.com">JaxonWScott@gmail.com</a><br>
-      <a href="tel:4035402335">403‑540‑2335</a><br>
-      <a href="https://www.linkedin.com/in/jaxonscott" target="_blank">LinkedIn</a>
-    </div>
-  </header>
-
-  <main class="grid">
-    <a href="/Robot_Arm_Inverse_Kinematics" class="project">
-      <img src="./images/MK4 Background.jpg" alt="Project1">
-      <div class="caption">Robot Arm + Inverse Kinematics</div>
-    </a>
-    <a href="/CL-415 Solidworks Assembly" class="project">
-      <img src="./images/Dark Background Full CL-415.jpg" alt="Project2">
-      <div class="caption">CL-415 Solidworks Assembly</div>
-    </a>
-    <a href="/project3" class="project">
-      <img src="./images/MagnefloatBackground.jpg" alt="Project 3">
-      <div class="caption">MagneFloat</div>
-    </a>
-    <a href="/project4" class="project">
-      <img src="./images/Blade Background.jpg" alt="Project 4">
-      <div class="caption">Hidden Blade Replica Prop</div>
-    </a>
-    <a href="/project5" class="project">
-      <img src="./images/.jpg" alt="Project 5">
-      <div class="caption">Workstation + 3D Printer</div>
-    </a>
-    <a href="/project6" class="project">
-      <img src="./images/E30Background.jpg" alt="Project 6">
-      <div class="caption">Car Modifications</div>
-    </a>
-  </main>
-
-</body>
-</html>
+/* Responsive */
+@media (max-width: 1000px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .project-showcase {
+    padding: 20px;
+  }
+  .more-text {
+    font-size: 18px;
+  }
+}
