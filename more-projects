@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Title | Jaxon W Scott</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Work Sans', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    a {
+      color: #f58634;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 30px 50px;
+      border-bottom: 4px solid #f58634;
+    }
+    .header-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin: 0;
+    }
+    .subheader {
+      font-size: 16px;
+      color: #bbb;
+      margin-top: 6px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #f58634;
+      margin-top: 40px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 50px;
+      color: #999;
+    }
+    .back-link:hover {
+      color: #f58634;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-title">Project Title</div>
+    <div class="subheader">Brief one-line description of what this project is</div>
+  </header>
+
+  <main>
+    <h2>Overview</h2>
+    <p>This is a short overview of what the project is, what it solves, and why it's interesting.</p>
+
+    <h2>Process / Development</h2>
+    <p>Here you can explain your development process, design tools used (e.g. SolidWorks, Python, Arduino), and any challenges you overcame.</p>
+    <img src="./images/placeholder.jpg" alt="Screenshot or photo of the project">
+
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Example: Python, Inverse Kinematics, Arduino</li>
+      <li>Example: SolidWorks, CAD Assembly, Rendering</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>Summarize the impact, results, or what you learned.</p>
+
+    <a href="/" class="back-link">← Back to Home</a>
+  </main>
+</body>
+</html>
