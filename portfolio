@@ -206,7 +206,7 @@
 
   <main class="project-showcase">
     <div class="featured-grid">
-      <a href="/Robot_Arm_Inverse_Kinematics" class="project">
+      <a href="/robot-arm-inverse-kinematics" class="project">
         <div class="caption">Robot Arm + Inverse Kinematics</div>
         <img src="./images/Arm Dark Background.jpg" alt="Robot Arm with Inverse Kinematics">
       </a>
@@ -223,3 +223,4 @@
 
 </body>
 </html>
+
